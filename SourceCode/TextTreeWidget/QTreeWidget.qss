@@ -1,0 +1,51 @@
+
+
+QTreeWidget{
+
+	margin-left:-22px;
+
+ 	padding:0px;
+
+}
+
+
+QTreeWidget::item {
+
+        height:29px;
+
+	margin:0px;
+
+ 	padding:0px;
+
+}
+
+
+
+QTreeWidget::item:hover {
+
+	show-decoration-selected:1;
+
+	background-color: rgb(49, 58, 66);
+
+	selection-background-color: rgb(49, 58, 66);
+
+	color: rgb(255,255,255);
+
+}
+
+
+
+QTreeWidget::item:selected {
+
+	show-decoration-selected:1;
+
+	selection-background-color: rgb(37, 44, 50);
+
+	color: rgb(81,162,253);
+
+}
+
+
+
+
+
