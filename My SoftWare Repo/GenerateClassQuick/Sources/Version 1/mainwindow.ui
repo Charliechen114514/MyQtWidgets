@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1111</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget_8" native="true">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="btn_refresh">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>刷新</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_setClassFirst">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>创建类</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_add_member">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>为选中的类添加类成员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_add_function">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>为选中的类添加类方法</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_clear_current">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>丢弃选中的类</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn_showSource">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>展示生成的源文件</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btn_showHeader">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>展示生成的头文件</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>把源文件内容粘贴到剪切板中</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>把头文件内容粘贴到剪切板中</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="2" column="0">
+           <widget class="QPushButton" name="btn_composeCurrentClass">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>编辑类...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btn_next">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>下一个类</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn_pre">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>上一个类</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="classList">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menusetClass">
+    <property name="title">
+     <string>创建...</string>
+    </property>
+    <addaction name="action_setClass"/>
+    <addaction name="separator"/>
+    <addaction name="action_addMember"/>
+    <addaction name="action_addFunction"/>
+   </widget>
+   <widget class="QMenu" name="menushowCurrentClass">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>展示当前类</string>
+     </property>
+     <addaction name="action_showCurrentHeader"/>
+     <addaction name="action_showCurrentSource"/>
+    </widget>
+    <addaction name="menu_3"/>
+    <addaction name="action_toNext"/>
+    <addaction name="action_toPrevious"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置导出方案</string>
+    </property>
+    <addaction name="action_editConfigWindow"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_viewExportSetting"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>切换风格</string>
+    </property>
+    <addaction name="action_lightView"/>
+    <addaction name="action_darkView"/>
+    <addaction name="action_thanks"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>导出</string>
+    </property>
+    <addaction name="action_export_Normal"/>
+    <addaction name="action_export_toCMake"/>
+   </widget>
+   <addaction name="menusetClass"/>
+   <addaction name="menushowCurrentClass"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_setClass">
+   <property name="text">
+    <string>创建类</string>
+   </property>
+  </action>
+  <action name="action_addMember">
+   <property name="text">
+    <string>为选中的类添加类成员</string>
+   </property>
+  </action>
+  <action name="action_addFunction">
+   <property name="text">
+    <string>为选中的类添加类方法</string>
+   </property>
+  </action>
+  <action name="action_toNext">
+   <property name="text">
+    <string>展示下一个类</string>
+   </property>
+  </action>
+  <action name="action_toPrevious">
+   <property name="text">
+    <string>展示上一个类</string>
+   </property>
+  </action>
+  <action name="action_exportAllClassToOnePlace">
+   <property name="text">
+    <string>将所有的类导出到一个文件夹下</string>
+   </property>
+  </action>
+  <action name="action_exportEachFileOneByOne">
+   <property name="text">
+    <string>对每一个文件单独保存位置</string>
+   </property>
+  </action>
+  <action name="action_exportPairFileOneByOne">
+   <property name="text">
+    <string>导出每一对文件到单独文件夹下</string>
+   </property>
+  </action>
+  <action name="actionSetAlwaysExportInclude">
+   <property name="text">
+    <string>设置头文件惯有保存路径</string>
+   </property>
+  </action>
+  <action name="actionSetAlwaysExportSource">
+   <property name="text">
+    <string>设置源文件惯有保存路径</string>
+   </property>
+  </action>
+  <action name="actionSetAlwaysExportPairs">
+   <property name="text">
+    <string>设置每对文件惯有保存路径</string>
+   </property>
+  </action>
+  <action name="action_viewExportSetting">
+   <property name="text">
+    <string>查阅保存配置情况</string>
+   </property>
+  </action>
+  <action name="action_editExportSettings">
+   <property name="text">
+    <string>编辑保存配置</string>
+   </property>
+  </action>
+  <action name="action_lightView">
+   <property name="text">
+    <string>亮主题风格</string>
+   </property>
+  </action>
+  <action name="action_darkView">
+   <property name="text">
+    <string>暗主题风格</string>
+   </property>
+  </action>
+  <action name="action_thanks">
+   <property name="text">
+    <string>致谢(github)</string>
+   </property>
+  </action>
+  <action name="action_showCurrentHeader">
+   <property name="text">
+    <string>展示头文件</string>
+   </property>
+  </action>
+  <action name="action_showCurrentSource">
+   <property name="text">
+    <string>展示源文件</string>
+   </property>
+  </action>
+  <action name="action_addToCmake">
+   <property name="text">
+    <string>导出到Cmake里</string>
+   </property>
+  </action>
+  <action name="action_addNormal">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="action_export_toCMake">
+   <property name="text">
+    <string>导出到CMake</string>
+   </property>
+  </action>
+  <action name="action_export_Normal">
+   <property name="text">
+    <string>正常导出</string>
+   </property>
+  </action>
+  <action name="action_editConfigWindow">
+   <property name="text">
+    <string>编辑保存配置</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
